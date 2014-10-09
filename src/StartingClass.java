@@ -9,6 +9,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.net.URL;
 
+@SuppressWarnings("serial")
 public class StartingClass extends Applet implements Runnable, KeyListener {
 
 	private Player Player;
@@ -59,7 +60,6 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 		// TODO Auto-generated method stub
 	}
 
-	@Override
 	public void run() {
 		while (true) {
 			Player.update();
@@ -98,7 +98,6 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 
 	}
 
-	@Override
 	public void keyPressed(KeyEvent e) {
 
 		switch (e.getKeyCode()) {
@@ -126,7 +125,6 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 
 	}
 
-	@Override
 	public void keyReleased(KeyEvent e) {
 		switch (e.getKeyCode()) {
 		case KeyEvent.VK_UP:
@@ -153,7 +151,6 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 
 	}
 
-	@Override
 	public void keyTyped(KeyEvent e) {
 		// TODO Auto-generated method stub
 
